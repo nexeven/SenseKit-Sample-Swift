@@ -48,7 +48,7 @@ class ViewController : UITableViewController {
         let playerItem = AVPlayerItem(url: URL(string: url)!)
         
         let player = AVPlayer(playerItem: playerItem)
-        let playerViewController = AVPlayerViewController()
+        let playerViewController = PlayerViewController()
         playerViewController.player = player
         playerViewController.allowsPictureInPicturePlayback = true
         playerViewController.showsPlaybackControls = true

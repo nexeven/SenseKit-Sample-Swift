@@ -16,6 +16,7 @@
 		B045D13D1DEE03F600CFFDCA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045D13C1DEE03F600CFFDCA /* ImageView.swift */; };
 		B063128A1DEE0F45007067DD /* SenseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06312881DEE0F3A007067DD /* SenseKit.framework */; };
 		B063128B1DEE0F45007067DD /* SenseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B06312881DEE0F3A007067DD /* SenseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B06C4B811DF04D5300E2DA3C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C4B801DF04D5300E2DA3C /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		B045D13A1DEDF84000CFFDCA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B045D13C1DEE03F600CFFDCA /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		B06312881DEE0F3A007067DD /* SenseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseKit.framework; path = Frameworks/SenseKit.framework; sourceTree = "<group>"; };
+		B06C4B801DF04D5300E2DA3C /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				B045D13A1DEDF84000CFFDCA /* TableViewCell.swift */,
 				B045D13C1DEE03F600CFFDCA /* ImageView.swift */,
 				B045D12A1DEDEE9D00CFFDCA /* ViewController.swift */,
+				B06C4B801DF04D5300E2DA3C /* PlayerViewController.swift */,
 				B045D12C1DEDEE9D00CFFDCA /* Main.storyboard */,
 				B045D12F1DEDEE9D00CFFDCA /* Assets.xcassets */,
 				B045D1311DEDEE9D00CFFDCA /* LaunchScreen.storyboard */,
@@ -166,6 +169,7 @@
 				B045D13B1DEDF84000CFFDCA /* TableViewCell.swift in Sources */,
 				B045D12B1DEDEE9D00CFFDCA /* ViewController.swift in Sources */,
 				B045D1291DEDEE9D00CFFDCA /* AppDelegate.swift in Sources */,
+				B06C4B811DF04D5300E2DA3C /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
