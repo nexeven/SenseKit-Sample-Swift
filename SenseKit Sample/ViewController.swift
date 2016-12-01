@@ -50,8 +50,6 @@ class ViewController : UITableViewController {
         let player = AVPlayer(playerItem: playerItem)
         let playerViewController = PlayerViewController()
         playerViewController.player = player
-        playerViewController.allowsPictureInPicturePlayback = true
-        playerViewController.showsPlaybackControls = true
         
         let pair1 = CustomMetadata()
         
@@ -82,8 +80,16 @@ class ViewController : UITableViewController {
     }
     
     func itemDidPlayToEndTime() {
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
-            self?.dismiss(animated: true)
-        }
+        Timer.scheduledTimer(
+            timeInterval: 1,
+            target: self,
+            selector: #selector(timerDidFire),
+            userInfo: nil,
+            repeats: false
+        )
+    }
+
+    func timerDidFire() {
+        dismiss(animated: true)
     }
 }
