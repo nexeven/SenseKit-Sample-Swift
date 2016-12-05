@@ -3,7 +3,7 @@ import AVFoundation
 import AVKit
 import SenseKit
 
-let videosURL = "http://dev.nexeven.se/AgentValidation/iOS/assetList.plist"
+let videosURL = "http://static.nexeven.com/SenseKit/assetList.plist"
 
 class ViewController : UITableViewController {
     var videos: NSArray = NSArray()
