@@ -14,9 +14,9 @@
 		B045D1331DEDEE9D00CFFDCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B045D1311DEDEE9D00CFFDCA /* LaunchScreen.storyboard */; };
 		B045D13B1DEDF84000CFFDCA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045D13A1DEDF84000CFFDCA /* TableViewCell.swift */; };
 		B045D13D1DEE03F600CFFDCA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045D13C1DEE03F600CFFDCA /* ImageView.swift */; };
-		B063128A1DEE0F45007067DD /* SenseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06312881DEE0F3A007067DD /* SenseKit.framework */; };
-		B063128B1DEE0F45007067DD /* SenseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B06312881DEE0F3A007067DD /* SenseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06C4B811DF04D5300E2DA3C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C4B801DF04D5300E2DA3C /* PlayerViewController.swift */; };
+		B7FFC0111DF7173F00A38E82 /* SenseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FFC0101DF7173F00A38E82 /* SenseKit.framework */; };
+		B7FFC0121DF7173F00A38E82 /* SenseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7FFC0101DF7173F00A38E82 /* SenseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B063128B1DEE0F45007067DD /* SenseKit.framework in Embed Frameworks */,
+				B7FFC0121DF7173F00A38E82 /* SenseKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,8 +43,8 @@
 		B045D1341DEDEE9E00CFFDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B045D13A1DEDF84000CFFDCA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B045D13C1DEE03F600CFFDCA /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		B06312881DEE0F3A007067DD /* SenseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseKit.framework; path = Frameworks/SenseKit.framework; sourceTree = "<group>"; };
 		B06C4B801DF04D5300E2DA3C /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		B7FFC0101DF7173F00A38E82 /* SenseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseKit.framework; path = Carthage/Build/iOS/SenseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B063128A1DEE0F45007067DD /* SenseKit.framework in Frameworks */,
+				B7FFC0111DF7173F00A38E82 /* SenseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		B045D11C1DEDEE9D00CFFDCA = {
 			isa = PBXGroup;
 			children = (
-				B06312881DEE0F3A007067DD /* SenseKit.framework */,
+				B7FFC0131DF7174300A38E82 /* Frameworks */,
 				B045D1271DEDEE9D00CFFDCA /* SenseKit Sample */,
 				B045D1261DEDEE9D00CFFDCA /* Products */,
 			);
@@ -90,6 +90,14 @@
 				B045D1341DEDEE9E00CFFDCA /* Info.plist */,
 			);
 			path = "SenseKit Sample";
+			sourceTree = "<group>";
+		};
+		B7FFC0131DF7174300A38E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7FFC0101DF7173F00A38E82 /* SenseKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +301,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "SenseKit Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -310,6 +319,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "SenseKit Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -74,8 +74,8 @@ class ViewController : UITableViewController {
         pair2.key = "CMK1"
         pair2.values = ["CMV1", "CMV11"]
     
-        SenseKit.plugin(
-            forAVPlayer: player,
+        let senseAgent = SenseAgent(
+            player: player,
             assetId: assetId,
             nxeCID: "BBQCID",
             assetType: assetType,
@@ -84,6 +84,8 @@ class ViewController : UITableViewController {
             assetMetadata: [pair1],
             viewerMetadata: [pair2]
         )
+
+        playerViewController.senseAgent = senseAgent
        
         playerViewController.player?.play()
         
