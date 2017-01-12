@@ -65,7 +65,7 @@
          <EnvironmentVariable
             key = "SENSEKIT_DEBUG"
             value = "true"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "OS_ACTIVITY_MODE"
